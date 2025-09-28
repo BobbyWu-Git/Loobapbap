@@ -1,13 +1,14 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ChevronDown, Star, Clock, MapPin } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
+  const navigate = useNavigate()
+  
   const scrollToMenu = () => {
-    const menuSection = document.querySelector('#menu')
-    if (menuSection) {
-      menuSection.scrollIntoView({ behavior: 'smooth' })
-    }
+    navigate('/menu')
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   return (

@@ -19,17 +19,17 @@ const About = () => {
   const features = [
     {
       title: 'Authentic Recipes',
-      description: 'Traditional Korean recipes passed down through generations, prepared with authentic ingredients and techniques.',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.',
       image: '/cupbap and kimbap.avif'
     },
     {
       title: 'Fresh Ingredients',
-      description: 'We source the finest and freshest ingredients daily to ensure every dish meets our high standards.',
+      description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.',
       image: '/cup bap.jpeg'
     },
     {
       title: 'Family Atmosphere',
-      description: 'Experience the warmth of Korean hospitality in our cozy, family-friendly restaurant environment.',
+      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
       image: '/egg toast.jpg'
     }
   ]
@@ -48,9 +48,9 @@ const About = () => {
             Our <span className="text-gradient">Story</span>
           </h2>
           <p className="text-lg text-korean-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Founded with a passion for sharing authentic Korean flavors, Loobapbap brings 
-            the rich culinary traditions of Korea to Waterloo. Every dish tells a story of 
-            heritage, family, and the love of good food.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </motion.div>
 
@@ -112,12 +112,12 @@ const About = () => {
         >
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-display font-bold text-korean-black mb-6">
-              "Food is our way of sharing Korean culture and bringing people together"
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             </h3>
             <p className="text-lg text-korean-gray-600 leading-relaxed mb-8">
-              At Loobapbap, we believe that every meal should be a celebration. Located in the heart 
-              of Waterloo, our chefs combine traditional Korean cooking methods with fresh, local ingredients to 
-              create dishes that honor our heritage while delighting modern palates.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
             <div className="flex items-center justify-center space-x-4">
               <div className="w-16 h-16 bg-korean-red rounded-full overflow-hidden">
@@ -128,8 +128,8 @@ const About = () => {
                 />
               </div>
               <div className="text-left">
-                <div className="font-bold text-korean-black">Chef Kim</div>
-                <div className="text-korean-gray-600">Head Chef & Owner</div>
+                <div className="font-bold text-korean-black">Lorem Ipsum</div>
+                <div className="text-korean-gray-600">Dolor Sit Amet</div>
               </div>
             </div>
           </div>

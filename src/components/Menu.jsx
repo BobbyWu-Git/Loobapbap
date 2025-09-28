@@ -38,6 +38,22 @@ const Menu = () => {
         spicy: false
       },
       {
+        name: 'Shrimp',
+        description: 'Fresh shrimp sandwich with Korean seasonings',
+        price: '$11.99',
+        image: '/egg-toast.jpg',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Avoholic',
+        description: 'Fresh avocado sandwich with special sauce',
+        price: '$10.49',
+        image: '/egg-toast.jpg',
+        popular: true,
+        spicy: false
+      },
+      {
         name: 'Crab and Avocado',
         description: 'Fresh crab meat with creamy avocado',
         price: '$12.49',
@@ -54,34 +70,98 @@ const Menu = () => {
         spicy: false
       },
       {
+        name: 'Hashbrown',
+        description: 'Crispy hashbrown sandwich with Korean twist',
+        price: '$9.99',
+        image: '/egg-toast.jpg',
+        popular: false,
+        spicy: false
+      },
+      {
         name: 'BLT',
         description: 'Classic bacon, lettuce, and tomato sandwich',
         price: '$11.99',
         image: '/egg-toast.jpg',
         popular: false,
         spicy: false
+      },
+      {
+        name: 'EggBull',
+        description: 'Special egg sandwich with Korean bulgogi',
+        price: '$13.49',
+        image: '/egg-toast.jpg',
+        popular: true,
+        spicy: false
       }
     ],
     cupbap: [
       {
-        name: 'Shrimp CupBap',
-        description: 'Korean rice bowl topped with seasoned shrimp',
+        name: 'Tofu Bap',
+        description: 'Korean rice bowl with seasoned tofu',
+        price: '$9.99',
+        image: '/cup bap.jpeg',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Bulgogi Bap',
+        description: 'Korean rice bowl with marinated bulgogi beef',
+        price: '$12.99',
+        image: '/cup bap.jpeg',
+        popular: true,
+        spicy: false
+      },
+      {
+        name: 'Spicy Pork Bap',
+        description: 'Korean rice bowl with spicy pork',
+        price: '$11.99',
+        image: '/cup bap.jpeg',
+        popular: true,
+        spicy: true
+      },
+      {
+        name: 'Chicken Bap',
+        description: 'Korean rice bowl with seasoned chicken',
+        price: '$11.49',
+        image: '/cup bap.jpeg',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'BBQ Eel Bap',
+        description: 'Korean rice bowl with grilled eel',
+        price: '$14.99',
+        image: '/cup bap.jpeg',
+        popular: true,
+        spicy: false
+      },
+      {
+        name: 'DuChi Bap',
+        description: 'Korean rice bowl with special DuChi topping',
         price: '$10.99',
         image: '/cup bap.jpeg',
-        popular: true,
+        popular: false,
         spicy: false
       },
       {
-        name: 'Avoholic CupBap',
-        description: 'Fresh avocado rice bowl with Korean seasonings',
-        price: '$10.49',
+        name: 'Shrimp Bap',
+        description: 'Korean rice bowl topped with seasoned shrimp',
+        price: '$12.49',
         image: '/cup bap.jpeg',
-        popular: true,
+        popular: false,
         spicy: false
       },
       {
-        name: 'Hashbrown CupBap',
-        description: 'Crispy hashbrown over seasoned rice',
+        name: 'PamChi Bap',
+        description: 'Korean rice bowl with PamChi special topping',
+        price: '$11.49',
+        image: '/cup bap.jpeg',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'ChiChi Bap',
+        description: 'Korean rice bowl with ChiChi special preparation',
         price: '$10.99',
         image: '/cup bap.jpeg',
         popular: false,
@@ -90,77 +170,189 @@ const Menu = () => {
     ],
     kimbap: [
       {
-        name: 'Traditional Kimbap',
-        description: 'Korean seaweed rice roll with vegetables and egg',
-        price: '$8.99',
+        name: 'LooBapBap Kimbap',
+        description: 'Our signature kimbap with special ingredients',
+        price: '$12.49',
         image: '/cupbap-and-kimbap.avif',
         popular: true,
+        spicy: false
+      },
+      {
+        name: 'Veggie Kimbap',
+        description: 'Fresh vegetable kimbap roll',
+        price: '$12.49',
+        image: '/cupbap-and-kimbap.avif',
+        popular: false,
         spicy: false
       },
       {
         name: 'Bulgogi Kimbap',
         description: 'Kimbap filled with marinated bulgogi beef',
-        price: '$12.99',
+        price: '$14.99',
         image: '/cupbap-and-kimbap.avif',
         popular: true,
         spicy: false
       },
       {
-        name: 'Tuna Kimbap',
-        description: 'Fresh tuna kimbap with Korean seasonings',
-        price: '$10.99',
+        name: 'Spicy Pork Kimbap',
+        description: 'Kimbap with spicy pork filling',
+        price: '$14.99',
         image: '/cupbap-and-kimbap.avif',
         popular: false,
+        spicy: true
+      },
+      {
+        name: 'BBQ Eel Kimbap',
+        description: 'Kimbap with grilled BBQ eel',
+        price: '$15.49',
+        image: '/cupbap-and-kimbap.avif',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Cream Cheese Kimbap',
+        description: 'Kimbap with creamy cheese filling',
+        price: '$13.49',
+        image: '/cupbap-and-kimbap.avif',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Tuna Kimbap',
+        description: 'Fresh tuna kimbap with Korean seasonings',
+        price: '$13.49',
+        image: '/cupbap-and-kimbap.avif',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Crab & Avocado Kimbap',
+        description: 'Kimbap with fresh crab and avocado',
+        price: '$15.49',
+        image: '/cupbap-and-kimbap.avif',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Dragon Kimbap',
+        description: 'Special dragon-style kimbap preparation',
+        price: '$15.49',
+        image: '/cupbap-and-kimbap.avif',
+        popular: true,
         spicy: false
       }
     ],
     beverage: [
       {
-        name: 'Korean Tea',
-        description: 'Traditional Korean teas - green tea, barley tea',
+        name: 'Can',
+        description: 'Canned soft drinks',
+        price: '$2.49',
+        image: '/beverage-logo.svg',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Water',
+        description: 'Bottled water',
+        price: '$1.99',
+        image: '/beverage-logo.svg',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Orange Juice',
+        description: 'Fresh orange juice',
+        price: '$2.49',
+        image: '/beverage-logo.svg',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Apple Juice',
+        description: 'Fresh apple juice',
+        price: '$2.49',
+        image: '/beverage-logo.svg',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Can Milkis',
+        description: 'Korean carbonated milk drink',
+        price: '$3.29',
+        image: '/beverage-logo.svg',
+        popular: true,
+        spicy: false
+      },
+      {
+        name: 'Pear',
+        description: 'Korean pear juice',
+        price: '$3.29',
+        image: '/beverage-logo.svg',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Fanta',
+        description: 'Fanta orange soda',
+        price: '$2.99',
+        image: '/beverage-logo.svg',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Aloe',
+        description: 'Refreshing aloe vera drink',
         price: '$4.99',
         image: '/beverage-logo.svg',
         popular: true,
         spicy: false
       },
       {
-        name: 'Korean Coffee',
-        description: 'Freshly brewed Korean-style coffee',
-        price: '$5.99',
+        name: 'Strawberry Milk',
+        description: 'Korean strawberry flavored milk',
+        price: '$3.49',
         image: '/beverage-logo.svg',
         popular: true,
-        spicy: false
-      },
-      {
-        name: 'Sikhye',
-        description: 'Traditional Korean sweet rice drink',
-        price: '$5.99',
-        image: '/beverage-logo.svg',
-        popular: false,
         spicy: false
       }
     ],
     appetizer: [
       {
-        name: 'Korean Fried Chicken',
-        description: 'Crispy Korean-style fried chicken',
-        price: '$12.99',
-        image: '/menu items.jpeg',
-        popular: true,
-        spicy: true
-      },
-      {
-        name: 'Mandu',
-        description: 'Korean dumplings filled with pork and vegetables',
-        price: '$8.99',
+        name: 'Bulgogi Mandu',
+        description: 'Korean dumplings filled with bulgogi beef',
+        price: '$10.99',
         image: '/menu items.jpeg',
         popular: true,
         spicy: false
       },
       {
-        name: 'Pajeon',
-        description: 'Korean scallion pancake',
-        price: '$9.99',
+        name: 'Pork Mandu',
+        description: 'Korean dumplings filled with seasoned pork',
+        price: '$10.99',
+        image: '/menu items.jpeg',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Kimchi',
+        description: 'Traditional fermented Korean cabbage',
+        price: '$5.49',
+        image: '/menu items.jpeg',
+        popular: true,
+        spicy: true
+      },
+      {
+        name: 'Kimari',
+        description: 'Korean seasoned vegetables',
+        price: '$5.99',
+        image: '/menu items.jpeg',
+        popular: false,
+        spicy: false
+      },
+      {
+        name: 'Chicken Mandu',
+        description: 'Korean dumplings with chicken filling (5-piece)',
+        price: '$10.99',
         image: '/menu items.jpeg',
         popular: false,
         spicy: false
@@ -169,18 +361,26 @@ const Menu = () => {
     'spicy-rice': [
       {
         name: 'Tteokbokki',
-        description: 'Spicy Korean rice cakes in gochujang sauce',
-        price: '$8.99',
+        description: 'Traditional spicy Korean rice cakes',
+        price: '$15.49',
         image: '/cupbap-and-kimbap.avif',
         popular: true,
         spicy: true
       },
       {
-        name: 'Cheese Tteokbokki',
-        description: 'Spicy rice cakes topped with melted cheese',
-        price: '$10.99',
+        name: 'Special Tteokbokki',
+        description: 'Premium tteokbokki with extra toppings',
+        price: '$18.49',
         image: '/cupbap-and-kimbap.avif',
         popular: true,
+        spicy: true
+      },
+      {
+        name: 'Rose Tteokbokki',
+        description: 'Creamy rose sauce tteokbokki',
+        price: '$13.99',
+        image: '/cupbap-and-kimbap.avif',
+        popular: false,
         spicy: true
       }
     ]
@@ -218,10 +418,10 @@ const Menu = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setActiveCategory(category.id)}
-              className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base ${
+              className={`flex items-center space-x-1 sm:space-x-2 px-3 sm:px-4 md:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-sm sm:text-base border-2 ${
                 activeCategory === category.id
-                  ? 'bg-korean-red text-white shadow-lg'
-                  : 'bg-gray-100 text-korean-gray-600 hover:bg-gray-200'
+                  ? 'bg-white text-korean-red border-korean-red shadow-lg'
+                  : 'bg-gray-100 text-korean-gray-600 hover:bg-gray-200 border-transparent'
               }`}
             >
               <div className="w-5 h-5 flex items-center justify-center">
@@ -229,9 +429,7 @@ const Menu = () => {
                   <img 
                     src={category.icon} 
                     alt={`${category.name} icon`}
-                    className={`w-full h-full object-contain ${
-                      activeCategory === category.id ? 'filter brightness-0 invert' : ''
-                    }`}
+                    className="w-full h-full object-contain"
                     onError={(e) => {
                       // Fallback to Lucide icon if image fails to load
                       e.target.style.display = 'none'
@@ -309,27 +507,7 @@ const Menu = () => {
           </motion.div>
         </AnimatePresence>
 
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-center mt-16"
-        >
-          <div className="bg-gradient-to-r from-korean-red to-red-700 rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Can't decide? Try our Chef's Special!</h3>
-            <p className="text-lg mb-6 opacity-90">
-              Let our chef surprise you with a curated selection of our most popular dishes.
-            </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-white text-korean-red px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
-            >
-              Order Chef's Special - $45.99
-            </motion.button>
-          </div>
-        </motion.div>
+        
       </div>
     </section>
   )

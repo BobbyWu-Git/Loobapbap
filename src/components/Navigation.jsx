@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Menu, X, Phone, MapPin } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { Menu, Phone, MapPin } from 'lucide-react'
+import { motion } from 'framer-motion'
 import { useNavigate, useLocation } from 'react-router-dom'
 
 const Navigation = ({ onMenuClick, showMenuButton = false }) => {
-  const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const navigate = useNavigate()
   const location = useLocation()
@@ -31,7 +30,6 @@ const Navigation = ({ onMenuClick, showMenuButton = false }) => {
 
   const handleNavigate = (path) => {
     navigate(path)
-    setIsOpen(false)
     // Scroll to top when navigating to a new page
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -121,64 +119,10 @@ const Navigation = ({ onMenuClick, showMenuButton = false }) => {
               </div>
             </div>
             
-            {/* Mobile menu button */}
-            <motion.button
-              whileTap={{ scale: 0.95 }}
-              onClick={() => setIsOpen(!isOpen)}
-              className={`md:hidden p-2 transition-colors hover:text-korean-red ${
-                scrolled || !isHomePage
-                  ? 'text-korean-black' 
-                  : 'text-white'
-              }`}
-            >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
-            </motion.button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Navigation */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white/95 backdrop-blur-md border-t border-korean-gray-200"
-          >
-            <div className="container-custom py-4">
-              <div className="flex flex-col space-y-4">
-                {navItems.map((item) => (
-                  <motion.button
-                    key={item.name}
-                    whileHover={{ x: 10 }}
-                    onClick={() => handleNavigate(item.path)}
-                    className={`text-left font-medium transition-colors duration-300 py-2 ${
-                      location.pathname === item.path
-                        ? 'text-korean-red'
-                        : 'text-korean-black hover:text-korean-red'
-                    }`}
-                  >
-                    {item.name}
-                  </motion.button>
-                ))}
-                <div className="pt-4 border-t border-korean-gray-200">
-                  <div className="flex flex-col space-y-2 text-sm text-korean-gray-600">
-                    <div className="flex items-center space-x-2">
-                      <Phone size={16} />
-                      <span>(519) 883-4747</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <MapPin size={16} />
-                      <span>Waterloo, ON</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </motion.nav>
   )
 }

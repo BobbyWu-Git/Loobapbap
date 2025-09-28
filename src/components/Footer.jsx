@@ -35,8 +35,8 @@ const Footer = () => {
   return (
     <footer className="bg-korean-black text-white">
       {/* Main Footer Content */}
-      <div className="container-custom py-12 sm:py-16 lg:py-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
+      <div className="container-custom py-12 sm:py-16 lg:py-20 px-6 sm:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 text-center sm:text-left">
           {/* Restaurant Info */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -44,7 +44,7 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
             className="sm:col-span-2 lg:col-span-1"
           >
-            <div className="flex items-center space-x-3 mb-6 sm:mb-8">
+            <div className="flex items-center justify-center sm:justify-start space-x-3 mb-6 sm:mb-8">
               <img
                 src="/logo.jpg"
                 alt="LooBapBap Logo"
@@ -59,7 +59,7 @@ const Footer = () => {
               Experience authentic Korean flavors in the heart of Waterloo. 
               We bring traditional recipes and warm hospitality to every meal.
             </p>
-            <div className="flex space-x-3 sm:space-x-4">
+            <div className="flex justify-center sm:justify-start space-x-3 sm:space-x-4">
               {socialLinks.map((social, index) => (
                 <motion.a
                   key={index}
@@ -198,7 +198,7 @@ const Footer = () => {
 
       {/* Bottom Footer */}
       <div className="border-t border-korean-gray-800">
-        <div className="container-custom py-6 sm:py-8">
+        <div className="container-custom py-6 sm:py-8 px-6 sm:px-8">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-3 lg:space-y-0">
             <div className="text-center lg:text-left">
               <p className="text-gray-400 text-xs sm:text-sm">
