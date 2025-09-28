@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Custom CSS Variables for Korean Theme */
+:root {
+  --korean-red: #DC143C;
+  --korean-gold: #FFD700;
+  --korean-black: #1a1a1a;
+  --korean-white: #FFFFFF;
+  --korean-gray-50: #f9fafb;
+  --korean-gray-100: #f3f4f6;
+  --korean-gray-200: #e5e7eb;
+  --korean-gray-300: #d1d5db;
+  --korean-gray-400: #9ca3af;
+  --korean-gray-500: #6b7280;
+  --korean-gray-600: #4b5563;
+  --korean-gray-700: #374151;
+  --korean-gray-800: #1f2937;
+  --korean-gray-900: #111827;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+    background-color: var(--korean-red);
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 text-white hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-300;
+    border-color: var(--korean-red);
+    color: var(--korean-red);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--korean-red);
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .text-gradient {
+    background: linear-gradient(to right, var(--korean-red), var(--korean-gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .bg-korean-red {
+    background-color: var(--korean-red);
+  }
+  
+  .text-korean-red {
+    color: var(--korean-red);
+  }
+  
+  .border-korean-red {
+    border-color: var(--korean-red);
+  }
+  
+  .text-korean-black {
+    color: var(--korean-black);
+  }
+  
+  .bg-korean-black {
+    background-color: var(--korean-black);
+  }
+  
+  .text-korean-gold {
+    color: var(--korean-gold);
+  }
+  
+  .text-korean-gray-600 {
+    color: var(--korean-gray-600);
+  }
+  
+  .text-korean-gray-700 {
+    color: var(--korean-gray-700);
+  }
+  
+  .bg-korean-gray-800 {
+    background-color: var(--korean-gray-800);
+  }
+  
+  .hover\:text-korean-red:hover {
+    color: var(--korean-red) !important;
+  }
+  
+  .hover\:bg-korean-red:hover {
+    background-color: var(--korean-red);
+  }
+  
+  .focus\:ring-korean-red:focus {
+    --tw-ring-color: var(--korean-red);
+  }
+  
+  /* Image optimization for professional display */
+  img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+  
+  .logo-image {
+    box-shadow: 0 4px 8px rgba(220, 20, 60, 0.2);
+  }
+
+  /* Enhanced scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--korean-gray-100);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--korean-red);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b91c3c;
+  }
+
+  /* Smooth focus transitions - exclude navigation buttons */
+  input:focus,
+  textarea:focus,
+  select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(220, 20, 60, 0.2);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+  /* Remove focus outline for navigation buttons */
+  button:focus {
+    outline: none;
+  }
+
+  /* Line clamp utility */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Enhanced backdrop blur for better browser support */
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  /* Improved gradient text for better browser support */
+  .text-gradient {
+    background: linear-gradient(to right, var(--korean-red), var(--korean-gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Loading animation for images */
+  .loading-shimmer {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+}
